@@ -1,0 +1,37 @@
+# Employee Shifts Analysis
+
+## 📌 Problem Statement
+The company wants to monitor employee work patterns to identify overtime issues, track attendance, and evaluate workload balance between day and night shifts.
+
+## 🛠 Dataset
+- Rows: 8 employees  
+- Columns: employee_id, employee_name, department, shift_type, hours_worked, overtime, attendance_pct  
+
+## 🔍 SQL Tasks
+1. Find employees with overtime > 20 hours.  
+2. Calculate average attendance by department.  
+3. Identify night shift employees with > 170 hours worked.  
+
+## ✅ Key Insights
+- [Fill in after running queries → e.g., Arjun Singh and Anil Sharma had high overtime (>20 hrs).]  
+- [Fill in → e.g., Security department has lowest attendance average.]  
+- [Fill in → e.g., Night shift employees tend to exceed 170+ hours.]  
+
+## 📂 Files in This Project
+- `shifts_data.csv` – dataset  
+- `queries.sql` – SQL queries used  
+- `README.md` – project documentation  
+
+## 📸 Sample Output
+
+| employee_name | overtime |
+|---------------|----------|
+| [Fill after query results] | [x] |
+
+| department | avg_attendance |
+|------------|----------------|
+| [Fill]    | [x]            |
+
+| employee_name | hours_worked | shift_type |
+|---------------|--------------|------------|
+| [Fill]        | [x]          | [Day/Night] |
