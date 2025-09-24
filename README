@@ -1,37 +1,33 @@
-# Employee Shifts Analysis
+# Employee Performance Dashboard
 
 ## 📌 Problem Statement
-The company wants to monitor employee work patterns to identify overtime issues, track attendance, and evaluate workload balance between day and night shifts.
+The company wants to monitor employee performance metrics including attendance, productivity, and feedback scores to identify top performers and areas for improvement.
 
 ## 🛠 Dataset
 - Rows: 8 employees  
-- Columns: employee_id, employee_name, department, shift_type, hours_worked, overtime, attendance_pct  
+- Columns: employee_id, employee_name, department, attendance_pct, tasks_completed, feedback_score  
 
 ## 🔍 SQL Tasks
-1. Find employees with overtime > 20 hours.  
-2. Calculate average attendance by department.  
-3. Identify night shift employees with > 170 hours worked.  
+1. Rank employees by tasks completed and feedback scores.  
+2. Calculate average attendance and productivity per department.  
+3. Categorize employees into performance tiers (Excellent, Good, Needs Improvement) using CASE statements.  
 
 ## ✅ Key Insights
-- [Fill in after running queries → e.g., Arjun Singh and Anil Sharma had high overtime (>20 hrs).]  
-- [Fill in → e.g., Security department has lowest attendance average.]  
-- [Fill in → e.g., Night shift employees tend to exceed 170+ hours.]  
+- [Fill in after running queries → e.g., Top performers based on tasks and feedback.]  
+- [Fill in → e.g., Departments with highest/lowest average attendance.]  
+- [Fill in → e.g., Employees needing performance improvement.]  
 
 ## 📂 Files in This Project
-- `shifts_data.csv` – dataset  
+- `employee_performance.csv` – dataset  
 - `queries.sql` – SQL queries used  
 - `README.md` – project documentation  
 
 ## 📸 Sample Output
 
-| employee_name | overtime |
-|---------------|----------|
-| [Fill after query results] | [x] |
+| employee_name | tasks_completed | feedback_score | performance_tier |
+|---------------|----------------|----------------|-----------------|
+| [Fill]        | [x]            | [y]            | [Fill]          |
 
-| department | avg_attendance |
-|------------|----------------|
-| [Fill]    | [x]            |
-
-| employee_name | hours_worked | shift_type |
-|---------------|--------------|------------|
-| [Fill]        | [x]          | [Day/Night] |
+| department   | avg_attendance | avg_tasks_completed |
+|-------------|----------------|------------------|
+| [Fill]      | [x]            | [y]              |
