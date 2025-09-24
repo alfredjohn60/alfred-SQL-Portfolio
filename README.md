@@ -1,33 +1,37 @@
-# Employee Performance Dashboard
+# Supply Chain Optimization
 
 ## 📌 Problem Statement
-The company wants to monitor employee performance metrics including attendance, productivity, and feedback scores to identify top performers and areas for improvement.
+The company wants to analyze inventory levels, supplier performance, and delivery times to optimize supply chain efficiency and prevent stockouts.
 
 ## 🛠 Dataset
-- Rows: 8 employees  
-- Columns: employee_id, employee_name, department, attendance_pct, tasks_completed, feedback_score  
+- Inventory (`inventory.csv`)  
+  - Columns: product_id, product_name, stock_level, reorder_point, supplier_id  
+- Suppliers (`suppliers.csv`)  
+  - Columns: supplier_id, supplier_name, delivery_days  
 
 ## 🔍 SQL Tasks
-1. Rank employees by tasks completed and feedback scores.  
-2. Calculate average attendance and productivity per department.  
-3. Categorize employees into performance tiers (Excellent, Good, Needs Improvement) using CASE statements.  
+1. Identify products below reorder point.  
+2. Calculate average delivery time per supplier.  
+3. Rank suppliers by delivery performance and stock reliability.  
+4. Optimize stock allocation using CASE statements to prioritize critical products.  
 
 ## ✅ Key Insights
-- [Fill in after running queries → e.g., Top performers based on tasks and feedback.]  
-- [Fill in → e.g., Departments with highest/lowest average attendance.]  
-- [Fill in → e.g., Employees needing performance improvement.]  
+- [Fill in after running queries → e.g., Products at risk of stockout.]  
+- [Fill in → e.g., Suppliers with fastest delivery times.]  
+- [Fill in → e.g., Recommended stock allocation strategies.]  
 
 ## 📂 Files in This Project
-- `employee_performance.csv` – dataset  
+- `inventory.csv` – inventory dataset  
+- `suppliers.csv` – supplier dataset  
 - `queries.sql` – SQL queries used  
 - `README.md` – project documentation  
 
 ## 📸 Sample Output
 
-| employee_name | tasks_completed | feedback_score | performance_tier |
-|---------------|----------------|----------------|-----------------|
-| [Fill]        | [x]            | [y]            | [Fill]          |
+| product_name    | stock_level | reorder_point | status          |
+|-----------------|-------------|---------------|----------------|
+| [Fill]          | [x]         | [y]           | [Low/OK/High]  |
 
-| department   | avg_attendance | avg_tasks_completed |
-|-------------|----------------|------------------|
-| [Fill]      | [x]            | [y]              |
+| supplier_name  | avg_delivery_days | rank |
+|---------------|-----------------|------|
+| [Fill]        | [x]              | [y]  |
