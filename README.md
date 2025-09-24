@@ -1,30 +1,33 @@
-# alfred-SQL-Portfolio
-# Inventory Analysis
+# Employee Performance Dashboard
 
 ## 📌 Problem Statement
-A factory needed to analyze stock levels, sales trends, and supplier reliability to avoid production delays.
+The company wants to monitor employee performance metrics including attendance, productivity, and feedback scores to identify top performers and areas for improvement.
 
 ## 🛠 Dataset
-- 8 products  
-- Columns: product_id, product_name, category, stock_level, reorder_point, supplier, sales_last_month  
+- Rows: 8 employees  
+- Columns: employee_id, employee_name, department, attendance_pct, tasks_completed, feedback_score  
 
 ## 🔍 SQL Tasks
-1. Find products below reorder point.  
-2. Rank products by last month’s sales.  
-3. Compare suppliers based on average stock.  
+1. Rank employees by tasks completed and feedback scores.  
+2. Calculate average attendance and productivity per department.  
+3. Categorize employees into performance tiers (Excellent, Good, Needs Improvement) using CASE statements.  
 
 ## ✅ Key Insights
-- Bearings and Gaskets are below reorder point → **risk of stockout**.  
-- Aluminium Plates were the top-selling item.  
-- Supplier “ABC Metals” maintained the highest stock reliability.  
+- [Fill in after running queries → e.g., Top performers based on tasks and feedback.]  
+- [Fill in → e.g., Departments with highest/lowest average attendance.]  
+- [Fill in → e.g., Employees needing performance improvement.]  
 
 ## 📂 Files in This Project
-- `inventory_data.csv`  
-- `queries.sql`  
-- `README.md`  
+- `employee_performance.csv` – dataset  
+- `queries.sql` – SQL queries used  
+- `README.md` – project documentation  
 
 ## 📸 Sample Output
-| product_name | stock_level | reorder_point |
-|--------------|-------------|---------------|
-| Bearings     | 20          | 50            |
-| Gaskets      | 15          | 40            |
+
+| employee_name | tasks_completed | feedback_score | performance_tier |
+|---------------|----------------|----------------|-----------------|
+| [Fill]        | [x]            | [y]            | [Fill]          |
+
+| department   | avg_attendance | avg_tasks_completed |
+|-------------|----------------|------------------|
+| [Fill]      | [x]            | [y]              |
