@@ -31,3 +31,5 @@ The company wants to monitor employee performance metrics including attendance, 
 | department   | avg_attendance | avg_tasks_completed |
 |-------------|----------------|------------------|
 | [Fill]      | [x]            | [y]              |
+
+**Data link:** https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data?utm_source=chatgpt.com
