@@ -35,3 +35,5 @@ The company wants to analyze inventory levels, supplier performance, and deliver
 | supplier_name  | avg_delivery_days | rank |
 |---------------|-----------------|------|
 | [Fill]        | [x]              | [y]  |
+
+Data Link: https://data.mendeley.com/datasets/8gx2fvg2k6/3?utm_source
