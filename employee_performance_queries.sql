@@ -1,3 +1,36 @@
+CREATE DATABASE employee_dashboard;
+USE employee_dashboard;
+
+CREATE TABLE employee_performance (
+    Employee_ID INT PRIMARY KEY,
+    Department VARCHAR(100),
+    Gender VARCHAR(10),
+    Age INT,
+    Job_Title VARCHAR(100),
+    Hire_Date DATE,
+    Years_At_Company INT,
+    Education_Level VARCHAR(50),
+    Performance_Score DECIMAL(3,2),
+    Monthly_Salary DECIMAL(10,2),
+    Work_Hours_Per_Week INT,
+    Projects_Handled INT,
+    Overtime_Hours INT,
+    Sick_Days INT,
+    Remote_Work_Frequency INT,
+    Team_Size INT,
+    Training_Hours INT,
+    Promotions INT,
+    Employee_Satisfaction_Score DECIMAL(3,2),
+    Resigned VARCHAR(5)
+);
+
+LOAD DATA INFILE 'Pathway from the PC needs to be mentioned'
+INTO TABLE employee_performance
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
 SELECT Employee_ID, Department, Performance_Score, Employee_Satisfaction_Score
 FROM employee_performance
 ORDER BY Performance_Score DESC, Employee_Satisfaction_Score DESC
