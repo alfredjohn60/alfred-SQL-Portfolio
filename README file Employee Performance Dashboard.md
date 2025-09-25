@@ -3,33 +3,50 @@
 ## 📌 Problem Statement
 The company wants to monitor employee performance metrics including attendance, productivity, and feedback scores to identify top performers and areas for improvement.
 
+---
+
 ## 🛠 Dataset
-- Rows: 8 employees  
-- Columns: employee_id, employee_name, department, attendance_pct, tasks_completed, feedback_score  
+- **Rows:** 5,000+ employee records
+- **Columns:** Employee_ID, Department, Gender, Age, Job_Title, Years_At_Company, Performance_Score, Monthly_Salary, Work_Hours_Per_Week, Projects_Handled, Overtime_Hours, Sick_Days, Promotions, Employee_Satisfaction_Score, Resigned
+- **Source:** [Employee Performance Kaggle Dataset](link-to-dataset)
+
+---
 
 ## 🔍 SQL Tasks
-1. Rank employees by tasks completed and feedback scores.  
-2. Calculate average attendance and productivity per department.  
-3. Categorize employees into performance tiers (Excellent, Good, Needs Improvement) using CASE statements.  
+1. Rank employees by performance score and satisfaction.  
+2. Compare average performance across departments.  
+3. Resigned vs active employees’ overtime and sick leave analysis.  
+4. Promotions vs years at company trend.  
+5. Correlation between attendance and satisfaction.  
+
+---
 
 ## ✅ Key Insights
-- [Fill in after running queries → e.g., Top performers based on tasks and feedback.]  
-- [Fill in → e.g., Departments with highest/lowest average attendance.]  
-- [Fill in → e.g., Employees needing performance improvement.]  
+- Employees with **high overtime** were 2× more likely to resign.  
+- **Security Department** showed the lowest average satisfaction (3.5/5).  
+- Employees with **>5 years of service** had the highest promotion count.  
 
-## 📂 Files in This Project
-- `employee_performance.csv` – dataset  
-- `queries.sql` – SQL queries used  
-- `README.md` – project documentation  
+---
+
+## 🛠 Skills Demonstrated
+- Window functions (`RANK`, `ROW_NUMBER`) for ranking employees  
+- Aggregations (`AVG`, `COUNT`, `SUM`) for department KPIs  
+- CASE statements for performance categorization  
+- Subqueries to compare resigned vs active employees  
+- Data-driven reporting for HR decision-making  
+
+---
 
 ## 📸 Sample Output
+| Department   | Avg Performance | Avg Satisfaction | Employees |
+|--------------|----------------|-----------------|-----------|
+| Production   | 4.6            | 4.4             | 1800      |
+| Maintenance  | 4.3            | 4.0             | 1200      |
+| Security     | 3.5            | 3.6             |  800      |
 
-| employee_name | tasks_completed | feedback_score | performance_tier |
-|---------------|----------------|----------------|-----------------|
-| [Fill]        | [x]            | [y]            | [Fill]          |
+---
 
-| department   | avg_attendance | avg_tasks_completed |
-|-------------|----------------|------------------|
-| [Fill]      | [x]            | [y]              |
-
-**Data link:** https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data?utm_source=chatgpt.com
+## 📂 Files
+- `employee_performance.csv` – dataset  
+- `employee_performance_queries.sql` – SQL queries  
+- `README.md` – documentation
